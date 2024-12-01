@@ -1,0 +1,805 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #e8e0da;
+}
+
+/* navbar */
+.navbar {
+  position: absolute;
+  width: 100%;
+  height: 81px;
+  left: 0;
+  top: 0;
+  background: rgb(53, 42, 37);
+  z-index: 10;
+}
+.logo {
+  position: absolute;
+  width: 174px;
+  height: 36px;
+  left: 57px;
+  top: 20px;
+  color: rgb(165, 153, 148);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.menu {
+  left: 557px;
+  display: flex;
+  position: absolute;
+  left: 665px;
+  top: 31px;
+  gap: 80px;
+}
+.menu a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 16px;
+}
+.menu a:hover {
+  text-decoration: underline;
+}
+
+/* Эффект при наведении */
+.login-btn:hover {
+  background: rgb(200, 183, 176); /* Цвет при наведении */
+}
+
+/* Эффект при нажатии */
+.login-btn:active {
+  background: rgb(180, 160, 155); /* Цвет при нажатии */
+}
+
+.user-info {
+  position: absolute;
+  display: flex;
+  align-items: center; /* Выровнять текст и кнопку по вертикали */
+  right: 72px; /* Положение блока от правого края */
+  gap: 10px; /* Расстояние между текстом и кнопкой */
+  top: 20px;
+}
+
+.user-info span {
+  color: #f5f5f5;
+  font-size: 16px;
+  font-family: Inter, sans-serif;
+  line-height: normal; /* Сброс высоты строки */
+  margin: 0; /* Убрать возможные отступы */
+}
+
+.login-btn {
+  width: 130px;
+  height: 36px;
+  background: rgb(220, 203, 196); /* Цвет кнопки */
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease; /* Плавный переход цвета */
+  display: flex;
+  align-items: center; /* Центрировать текст внутри кнопки */
+  justify-content: center; /* Центрировать текст внутри кнопки */
+  line-height: normal; /* Сброс высоты строки */
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #e8e0da; /* Светло-бежевый цвет */
+  position: relative;
+  height: 483px;
+}
+
+.header-text1 {
+  position: absolute;
+  width: 764px;
+  height: 76px;
+  left: 100px;
+  top: 207px;
+  color: rgb(53, 42, 37);
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 77px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header-text2 {
+  position: absolute;
+  width: 764px;
+  height: 84px;
+  left: 319px;
+  top: 283px;
+  color: rgb(53, 42, 37);
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 77px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.header p {
+  position: absolute;
+  width: 299px;
+  height: 61px;
+  left: 338px;
+  top: 400px;
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.call-btn {
+  /* Rectangle 3 */
+  position: absolute;
+  width: 212px;
+  height: 40px;
+  left: 690px;
+  top: 420px;
+  border-radius: 1px;
+
+  background: rgb(53, 42, 37);
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.call-btn:hover {
+  background-color: #2e2420;
+}
+
+.header img {
+  /* image */
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  left: 1051px;
+  top: 196px;
+  border-radius: 1000px;
+}
+
+/* About Us Section */
+.about-us {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  margin-left: 150px;
+  color: rgb(53, 42, 37);
+  font-family: Inter;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 77px;
+  letter-spacing: 0%;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-us-content img {
+  max-width: 40%;
+  height: auto;
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+.about-us .text-content {
+  max-width: 50%;
+  text-align: left;
+}
+
+.about-us .text-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0%;
+}
+
+.about-us .cta-button {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.about-us .cta-button:hover {
+  background-color: #555;
+}
+
+.placeholder-image {
+  width: 40%;
+  height: 300px;
+  background: linear-gradient(135deg, #333, #555);
+  border-radius: 10px;
+  margin: 0 20px;
+}
+
+/* Контейнер для фона */
+.advantages-background {
+  width: 100%; /* Фон растягивается на всю ширину */
+  height: 870px; /* Высота блока */
+  background: linear-gradient(
+      to bottom,
+      rgba(232, 224, 218, 1) 0%,
+      rgba(232, 224, 218, 0) 20%
+    ),
+    url('src/img/advantages.png'); /* Градиент + изображение */
+  background-size: cover; /* Масштабирование изображения */
+  background-position: center; /* Центрирование изображения */
+  background-repeat: no-repeat; /* Отключение повторения изображения */
+  position: relative;
+  z-index: 0;
+}
+
+/* Контейнер для содержимого */
+.advantages {
+  width: 80%; /* Устанавливаем ширину контента в 80% */
+  margin: 0 auto; /* Центрируем блок по горизонтали */
+  padding: 20px;
+  position: relative; /* Для правильного наложения на фон */
+  z-index: 1; /* Контент будет сверху фона */
+}
+
+.advantages h2 {
+  /* КЛЮЧЕВЫЕ ПРЕИМУЩЕСТВА */
+  width: 599px;
+  height: 48px;
+  padding-top: 130px; /* Увеличиваем отступ сверху */
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.advantage-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #3a2e29;
+  padding: 15px 20px;
+  margin: 10px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.advantage-item h3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Стиль для абзацев */
+.advantage-item p {
+  margin: 10px 0 0 0;
+  font-size: 24px;
+  line-height: 1.5;
+  display: block; /* Для отображения текста */
+  width: 100%; /* Ширина по умолчанию */
+  white-space: normal; /* Перенос текста по словам */
+  overflow: hidden; /* Обрезка текста */
+  word-wrap: break-word; /* Перенос длинных слов */
+
+  /* Ограничение по пикселям */
+  max-width: 800px; /* Ограничиваем ширину текста */
+  -webkit-box-orient: vertical;
+}
+
+/* Скрытие текста, если класс .open не добавлен */
+.advantage-item p:not(.open) {
+  display: none; /* Скрытие текста */
+}
+
+.advantage-item.open p {
+  display: block; /* Show content when expanded */
+}
+
+/* Стиль для контейнера */
+.container {
+  width: 95%; /* Ширина контейнера на 95% от ширины экрана */
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #e8e0da; /* Светло-бежевый цвет */
+}
+
+.container h1 {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(
+    3,
+    450px
+  ); /* Фиксированная ширина карточек: 280px */
+  justify-content: space-between; /* Распределение пространства между карточками */
+  gap: 50px; /* Расстояние между карточками увеличено */
+}
+
+.card {
+  background-color: #e8e0da;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border: 1px solid #2e2420; /* Светлая рамка */
+}
+
+.card img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 5px;
+  text-align: left;
+}
+
+.card-content h2 {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.card-content p {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #4a4a4a;
+}
+
+/* Адаптивный дизайн для экранов меньше 960px */
+@media (max-width: 960px) {
+  .card-container {
+    grid-template-columns: repeat(2, 280px); /* 2 карточки в линии */
+    justify-content: center; /* Центрирование карточек */
+    gap: 20px; /* Немного меньшее расстояние между карточками */
+  }
+}
+
+/* Адаптивный дизайн для экранов меньше 600px */
+@media (max-width: 600px) {
+  .card-container {
+    grid-template-columns: 1fr; /* 1 карточка в линии */
+    gap: 15px; /* Минимальное расстояние между карточками */
+  }
+}
+
+/* hero-block */
+.hero-block {
+  position: relative;
+  background: linear-gradient(
+      to bottom,
+      rgba(232, 224, 218, 1) 0%,
+      rgba(232, 224, 218, 0) 40%
+    ),
+    url('src/img/hero-block.png') no-repeat center center; /* Градиент + изображение, без повторения */
+  background-size: cover; /* Изображение растягивается, чтобы заполнить весь блок */
+  height: 760px; /* Можно настроить под нужный размер */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Добавляем плавный переход сверху */
+.hero-block::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+  z-index: 1;
+}
+
+/* Контент внутри секции */
+.hero-block .content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-block h2 {
+  width: 884px;
+  height: 74px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 39px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* Стиль для кнопки */
+.cta-button {
+  width: 628px;
+  height: 90px;
+  border-radius: 5px;
+  background: rgb(153, 106, 62);
+  padding: 15px 30px;
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 50px;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8a5931;
+}
+
+/* Основной стиль футера */
+.footer-block {
+  background-color: #2e221b; /* Тёмный фон */
+  padding: 40px 20px;
+  color: white;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Логотип */
+.footer-logo h1 {
+  color: rgb(165, 153, 148);
+  font-family: Inter;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Навигация в футере */
+.footer-nav {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #a67541; /* Цвет при наведении */
+}
+
+/* Карта */
+.footer-map img {
+  width: 300px; /* Задайте ширину карты */
+  height: auto; /* Автоматическая пропорция */
+  border-radius: 5px; /* Закругление углов */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Тень */
+}
+
+/* Стили модального окна */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Это ключ для центрирования по вертикали */
+}
+
+.modal-content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; /* Вертикальное расположение элементов */
+  align-items: center; /* Центрируем ссылки */
+}
+
+.modal-content li {
+  margin: 15px 0; /* Добавляем отступ между номерами */
+}
+
+.modal-content a {
+  font-size: 24px; /* Увеличиваем размер шрифта */
+  color: #ffd700; /* Золотистый цвет для ссылок */
+  text-decoration: none; /* Убираем подчеркивание */
+  border: 2px solid transparent; /* Для визуального эффекта при фокусе */
+  border-radius: 5px;
+  padding: 10px 20px; /* Увеличиваем отступы для удобства */
+  display: flex;
+  align-items: center; /* Центрируем иконку с номером */
+  transition: all 0.3s ease; /* Плавный переход для эффектов */
+}
+
+.modal-content a i {
+  margin-right: 10px; /* Отступ между иконкой и номером */
+}
+
+.modal-content a:hover {
+  color: #000; /* Тёмный текст при наведении */
+  background-color: #ffd700; /* Золотистый фон */
+  border-color: #ffd700; /* Обводка совпадает с фоном */
+}
+
+.modal-content a:active {
+  transform: scale(0.98); /* Легкий эффект нажатия */
+}
+
+.modal-content {
+  background-color: #2b2322;
+  padding: 20px;
+  text-align: center;
+  width: 909px;
+  height: 475px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column; /* Содержимое будет располагаться вертикально */
+  justify-content: center; /* Центрируем содержимое внутри окна */
+  align-items: center; /* Горизонтальное центрирование элементов внутри */
+}
+
+.modal-content h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.modal-content input[type='text'] {
+  width: 90%; /* Сужаем немного, чтобы лучше смотрелось */
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.modal-content button {
+  background-color: #b08472;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px; /* Добавляем отступ сверху */
+}
+
+.modal-content button:hover {
+  background-color: #9d7460;
+}
+
+.close {
+  color: #ffffff;
+  position: absolute; /* Чтобы иконка "закрыть" находилась в правом верхнем углу */
+  top: 10px;
+  right: 10px;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #ff0000;
+}
+
+/* Filtering Form */
+.filter-form {
+  background-color: rgba(
+    53,
+    42,
+    37,
+    0.8
+  ); /* Slightly dark background for form */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.filter-form label {
+  font-size: 18px;
+  font-family: Inter, sans-serif;
+  color: #f5f5f5;
+}
+
+.filter-input {
+  padding: 10px;
+  border: 1px solid #3a2e29;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f5f5f5;
+  color: rgb(53, 42, 37);
+}
+
+.filter-btn {
+  background-color: #3a2e29;
+  color: #f5f5f5;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-btn:hover {
+  background-color: #2e2420;
+}
+
+/* Card Container */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 20px;
+}
+
+.card {
+  background-color: rgba(232, 224, 218, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.card-content h2 {
+  font-size: 24px;
+  color: #2e2420;
+  font-family: 'Inter', sans-serif;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Pagination */
+.pagination {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.pagination a {
+  margin: 0 10px;
+  color: #2e2420;
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+}
+
+.pagination a:hover {
+  color: #8a5931; /* Highlight color */
+}
+
+/* FAQ */
+.faq {
+  margin-top: 50px;
+}
+
+.faq h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #2e2420;
+  font-family: 'Inter', sans-serif;
+}
+
+.faq-item {
+  margin: 20px 0;
+}
+
+.faq-btn {
+  background-color: #3a2e29;
+  color: #f5f5f5;
+  padding: 12px;
+  width: 100%;
+  text-align: left;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.faq-btn:hover {
+  background-color: #2e2420;
+}
+
+.faq-content {
+  padding: 15px;
+  background-color: #e8e0da;
+  border-radius: 5px;
+  display: none;
+  font-size: 16px;
+}
+
+.faq-item.open .faq-content {
+  display: block;
+}
+
+.faq-item.open .faq-btn {
+  background-color: #2e2420;
+}
+
